@@ -1,0 +1,54 @@
+body{
+    background-color: aliceblue;
+    margin: 60px;
+    color: #1B4965;
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+button{
+    background-color: #A3D4E0;
+    color: white;
+    border: 0px;
+}
+input{
+    color: #1B4965;
+    background-color: white;
+    border: 0.001px solid #A3D4E0;
+}
+.anim{
+    animation-name: anim;
+    animation-duration: 3s;
+    animation-delay: 500ms;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    -webkit-animation: shadow-pop-tr 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) forwards;
+            animation: shadow-pop-tr 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) forwards;
+}
+@keyframes anim{
+    0% {
+        -webkit-box-shadow: 0 0 #62B6CB, 0 0 #62B6CB, 0 0 #62B6CB, 0 0 #62B6CB, 0 0 #62B6CB;
+                box-shadow: 0 0 #62B6CB, 0 0 #62B6CB, 0 0 #62B6CB, 0 0 #62B6CB, 0 0 #62B6CB;
+        -webkit-transform: translateX(0) translateY(0);
+                transform: translateX(0) translateY(0);
+      }
+      100% {
+        -webkit-box-shadow: 1px -1px #62B6CB, 2px -2px #3e3e3e, 3px -3px #3e3e3e, 4px -4px #3e3e3e, 5px -5px #3e3e3e;
+                box-shadow: 1px -1px #62B6CB, 2px -2px #3e3e3e, 3px -3px #3e3e3e, 4px -4px #3e3e3e, 5px -5px #3e3e3e;
+        -webkit-transform: translateX(-8px) translateY(8px);
+                transform: translateX(-8px) translateY(8px);
+      }
+    }
+    @keyframes shadow-pop-tr {
+      0% {
+        -webkit-box-shadow: 0 0 #62B6CB, 0 0 #62B6CB, 0 0 #62B6CB, 0 0 #62B6CB, 0 0 #62B6CB, 0 0 #62B6CB, 0 0 #3e3e3e, 0 0 #3e3e3e;
+                box-shadow: 0 0 #62B6CB, 0 0 #62B6CB, 0 0 #62B6CB, 0 0 #62B6CB, 0 0 #62B6CB, 0 0 #62B6CB, 0 0 #3e3e3e, 0 0 #3e3e3e;
+        -webkit-transform: translateX(0) translateY(0);
+                transform: translateX(0) translateY(0);
+      }
+      100% {
+        -webkit-box-shadow: 1px -1px #62B6CB, 2px -2px #62B6CB, 3px -3px #62B6CB, 4px -4px #62B6CB;
+                box-shadow: 1px -1px #62B6CB, 2px -2px #62B6CB, 3px -3px #62B6CB, 4px -4px #62B6CB;
+        -webkit-transform: translateX(-8px) translateY(8px);
+                transform: translateX(-8px) translateY(8px);
+      }
+    }

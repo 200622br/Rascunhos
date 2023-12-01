@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="2.css">
+    <script src="2.js" defer></script>
+    <title>IMC</title>
+</head>
+<body>
+    <h1>IMC</h1>
+    <pre id = titulo>IMC	            Classificação</pre>
+    <pre>Menor que 18,5	    Magreza</pre>
+    <pre>18,5 a 24,9	    Normal</pre>
+    <pre>25 a 29,9	    Sobrepeso</pre>
+    <pre>30 a 34,9	    Obesidade grau I</pre>
+    <pre>35 a 39,9	    Obesidade grau II</pre>
+    <pre>Maior que 40	    Obesidade grau III</pre>
+    <label for="altura"></label><p>Altura (em Metros)</p>
+    <input type="text" id="altura" class="anim">
+    <label for="peso"></label><p>Peso</p>
+    <input type="text" id="peso" class="anim">
+    <br><br>
+    <button onclick="calcula()" class="anim">Calcular</button>
+    <br><br>
+    <div id="res"></div>
+    
+</body>
+</html>
